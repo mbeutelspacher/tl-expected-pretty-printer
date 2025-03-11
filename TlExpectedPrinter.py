@@ -47,7 +47,7 @@ class TlExpectedPrinter(gdb.printing.PrettyPrinter):
         Der Rückgabewert dieser Funktion wird vor den Werten von Children angezeigt.
         Wird in CLion nicht im Debugger angezeigt.
         """
-        return self.tl_expected_instance.type.name
+        return "tl::expected"
 
     def children(self) -> List[Tuple[str, str]]:
         """
